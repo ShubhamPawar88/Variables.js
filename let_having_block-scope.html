@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //variable declare using let having a block(local)_scope
+        //=> means that variable can be accessed within that block only
+        //in which it is declared,it cannot be accessed from outside the block
+        
+         let x=50;
+         document.write("at top,outside block x ="+x+"<br>");
+
+         if(x==50)
+         {
+            //here we can redeclare x even if it is declared by let previously
+            //bcz, both x(declared at outside if,declared at inside if) having different scope
+
+            let x=20;//here,let x is having block scope means this value 20 CANNOT be accessible from outside this current block
+            document.write("inside block x ="+x+"<br>");//20
+         }
+         document.write("at bottom,outside block x ="+x+"<br>");//50
+    </script>
+</body>
+</html>

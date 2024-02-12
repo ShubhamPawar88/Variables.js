@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //let and const both are same in scope
+        //bcz,both are having block scope
+        //only difference is let can be reassigned/update
+        //and const cannot be reassigned/update
+        const s=80;
+        document.write("at top,output the block s ="+s+"<br>");
+
+        if(s==80)
+        {
+            const s=23;
+            document.write("inside  the block s ="+s+"<br>");//23
+
+        }
+        document.write("at bottom,output the block s ="+s+"<br>");//80
+    </script>
+</body>
+</html>

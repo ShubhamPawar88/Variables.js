@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //variable declare using var having a global_scope
+         //=> means that variable can be accessed througthout the program
+         //and inside any block
+
+         var x=50;
+         document.write("at top,outside block x ="+x+"<br>");
+
+         if(x==50)
+         {
+            var x=20; //here,var is having global scope means this value 20 can be accessible from outside this current block
+            document.write("inside block x ="+x+"<br>");//20
+         }
+         document.write("at bottom,outside block x ="+x+"<br>");//20
+    </script>
+</body>
+</html>
